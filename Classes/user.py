@@ -7,4 +7,4 @@ class User:
         self.id = str(uuid4())
         self.borrowed_books = list()
     def __str__(self):
-        return f"name: {self.name} id: {self.id} books: {self.borrowed_books}"
+        return {"name": self.name, "id": self.id, "books": self.borrowed_books}
