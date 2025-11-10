@@ -3,7 +3,6 @@ class Library:
         self.list_of_books = []
         self.list_of_user = []
 
-
     def add_book(self, book: Book):
         self.book = book
         self.list_of_books.append(self.book)
@@ -15,6 +14,7 @@ class Library:
         return self.list_of_user
         
     def borrow_book(self, user_id, book_isbn):
+
         self.user_id = user_id
         self.book_isbn = book_isbn
         for book in self.list_of_books:
