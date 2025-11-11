@@ -1,7 +1,7 @@
 from Classes.class_book import Book
 from Classes.class_Librar import Library
 from Classes.user import User
-
+import class_data
 if __name__ == "__main__":    
     book1 = Book("WAR","DAVID",1)
     book2 = Book("LOVE","DAN",2)
@@ -10,7 +10,8 @@ if __name__ == "__main__":
     user2 = User("NOA")
     
     libary = Library()
-
+    data = class_data()
+    
     libary.add_book(book1.__str__())
     libary.add_book(book2.__str__())
     print(libary.list_of_books)
@@ -19,4 +20,4 @@ if __name__ == "__main__":
     print(libary.list_of_user)
 
     print(libary.borrow_book(user1.id,book1.ISBN))
-    print(libary.return_book(user1.id,book1.ISBN))
+    print(data)
