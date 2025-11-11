@@ -1,5 +1,4 @@
 from uuid import uuid4
-import json
 class User:
 
     def __init__(self,name):

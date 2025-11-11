@@ -20,7 +20,7 @@ class Library:
             if self.book_isbn == self.list_of_books[book]["ISBN"] and self.user_id == self.list_of_user[book]["id"] and self.book["is_available"] == True:
                 self.book["is_available"] = False
                 self.user["borrowed_books"].append(self.book)
-                print(self.user["borrowed_books"])
+                print(self.user.__str__())
                 
                 return f"Borrowed name: {self.user_id}, Number of books he took: {self.book_isbn}, Is the book available? {self.book["is_available"]}"
             else:

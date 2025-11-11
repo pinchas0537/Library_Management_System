@@ -1,4 +1,3 @@
-import json
 class Book:
     def __init__(self, title, author, ISBN):
         self.title = title
